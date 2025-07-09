@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("../imagenes/fondod.jpg") no-repeat center center / cover;
+    color: #eae6da;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #4CAF50;
+    color: #eae6da;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Menú */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* ✅ Se ajusta en varias líneas si no cabe */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Todos los enlaces */
+a {
+    color: #eae6da;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Cambiar cuando pasa el mouse */
+a:hover {
+    color: #FF5733;
+    text-decoration: underline;
+}
+
+
+
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    max-width: 800px;
+    width: 90%; /* ✅ Se adapta al ancho en pantallas pequeñas */
+    margin: auto;
+    background-color: white;
+    color: #333; /* ✅ Texto oscuro para buena lectura en fondo blanco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+
+/* ✅ Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* ✅ Menú en columna */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        width: 100%; /* ✅ Ocupa todo el ancho disponible */
+    }
+}
